@@ -11,7 +11,7 @@ int main(void)
 
 	c = 97;
 	n = 10;
-	while ( c <= 122)
+	while (c <= 122)
 	{
 		putchar(c);
 		c++;
