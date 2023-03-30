@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
   * print_number - prints an intger using putchar
   *@n: integer to be printed
@@ -27,6 +29,6 @@ void print_number(int n)
 	}
 	for (; count >= 1; count /= 10)
 	{
-		_putchar(((m / count) % 10) + 48);
+		_putchar(((mag / count) % 10) + 48);
 	}
 }
