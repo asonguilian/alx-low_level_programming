@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int mag, div, count;
+	unsigned int mag, div, count;
 
 	if (n < 0)
 	{
