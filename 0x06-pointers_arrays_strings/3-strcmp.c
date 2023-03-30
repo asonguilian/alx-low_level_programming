@@ -33,8 +33,9 @@ int _strlen(char *s)
 
 int _strcmp(char *s1, char *s2)
 {
-	int l1, l2, i, n;
+	int l1, l2, i, n, dif;
 
+	dif = 0;
 	l1 = _strlen(s1);
 	l2 = _strlen(s2);
 	if (l1 <= l2)
@@ -43,14 +44,10 @@ int _strcmp(char *s1, char *s2)
 		n = l2;
 	for (i = 0; i < n; i++)
 	{
-		if (s1[i] < s2[i])
-			return (-15);
-		else if (s1[i] > s2[i])
-			return (15);
+		dif = s1[i] - s2[i];
+		if (dif != 0)
+			return (dif);
 	}
-	if (l1 < l2)
-		return (-15);
-	else if (l1 > l2)
-		return (15);
-	return (0);
+	dif = s1[i] - s2[i];
+	return (dif);
 }
