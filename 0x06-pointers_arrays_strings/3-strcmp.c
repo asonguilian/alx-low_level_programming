@@ -44,13 +44,13 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; i < n; i++)
 	{
 		if (s1[i] < s2[i])
-			return (-1215225);
+			return (-15);
 		else if (s1[i] > s2[i])
-			return (1215225);
+			return (15);
 	}
 	if (l1 < l2)
-		return (-4);
+		return (-15);
 	else if (l1 > l2)
-		return (4);
+		return (15);
 	return (0);
 }
