@@ -7,7 +7,7 @@
   * Return: 1 if the number is prime, otherwise 0
   */
 
-int is_prime_number(unsigned int n, unsigned int c)
+int is_prime(unsigned int n, unsigned int c)
 {
 	if (n % c == 0)
 	{
