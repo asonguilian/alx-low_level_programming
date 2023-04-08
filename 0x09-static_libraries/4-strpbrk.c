@@ -1,0 +1,23 @@
+/**
+  * _strpbrk -searches a string fo any of a set of bytes
+  * @s: input string to be searched
+  * @accept: string to be searched
+  * Return: pointer to the byte in s that matches
+  * one of the bytes in accept
+  * NULL if no such byte is foun
+   */
+
+char *_strpbrk(char *s, char *accept)
+{
+	unsigned int i, j;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+				return (s + i);
+		}
+	}
+	return ('\0');
+}
