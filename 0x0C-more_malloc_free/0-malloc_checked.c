@@ -5,7 +5,7 @@
   * malloc_checked - allocates memory using malloc
   * @b: number of bytes.
   *
-  * return: pointer to the mmeory allocated
+  * Return: pointer to the mmeory allocated
   * if maloc fails, exits with status 98.
   */
 
