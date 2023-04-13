@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
   * array_range - creates an array of integers
   * @min: first elmentof the array
