@@ -13,17 +13,18 @@
 int *array_range(int min, int max)
 {
 	int *tab;
-	int i, value = min;
+	int i, value = min, n;
 
+	n = max - min + 1;
 	if (min > max)
 		return (NULL);
 
-	tab = malloc(sizeof(*tab) * ((max - min) + 1));
+	tab = malloc(sizeof(*tab) * n);
 
 	if (tab == NULL)
 		return (NULL);
 
-	for (i = 0; i <= max - min + 1; i++)
+	for (i = 0; i < n; i++)
 	{
 		tab[i] = value;
 		value++;
