@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdlib.h>
+
 /**
   * _calloc - allocatesmemory using malloc and initilizes it to zero
   * @nmemb: size of array
