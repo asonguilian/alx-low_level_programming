@@ -12,7 +12,7 @@
 
 int *array_range(int min, int max)
 {
-	int *tab
+	int *tab;
 	int i, value = min;
 
 	if (min > max)
@@ -31,4 +31,3 @@ int *array_range(int min, int max)
 
 	return (tab);
 }
-
