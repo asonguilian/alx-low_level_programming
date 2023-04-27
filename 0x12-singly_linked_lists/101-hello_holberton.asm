@@ -1,17 +1,15 @@
-section .data
-	hello: db "Hello, Holberton", 0
-	format: db "%s\n", 0
+	SECTION .data
+message:	db "Hello, Holberton", 0
+format:	db "%s", 10, 0
 
-section .text
+	SECTION .text
 	extern printf
 	global main
-
 main:
-	move esi, hello
+	mov esi, message
 	move edi, format
-	;call printf function
-	xor eax, eax
+	move eax, 0
 	call printf
-	;exit
-	xor eax, eax
+
+	move eax, 0
 	ret
