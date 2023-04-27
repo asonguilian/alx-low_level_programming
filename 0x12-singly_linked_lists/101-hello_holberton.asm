@@ -7,8 +7,8 @@ section .text
 	global main
 
 main:
-	move rdi, format
-	move rsi, hello
+	move esi, hello
+	move edi, format
 	;call printf function
 	xor eax, eax
 	call printf
